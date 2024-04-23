@@ -1,0 +1,742 @@
+[
+  {
+    "SourceSiteName": "JP-Lab",
+    "TargetSiteName": "JP-Lab",
+    "VpgIdentifier": null,
+    "VpgSettingsIdentifier": null,
+    "Basic": {
+      "Name": "test",
+      "VpgType": "Remote",
+      "RpoInSeconds": 300,
+      "TestIntervalInMinutes": 0,
+      "JournalHistoryInHours": 24,
+      "Priority": "Medium",
+      "UseWanCompression": false,
+      "ServiceProfileIdentifier": "11111111-1111-1111-1111-111111111111",
+      "ZorgIdentifier": "2291d2c0-b910-4671-837a-9f4185f52e47",
+      "ProtectedSiteIdentifier": "3a654b00-f6e1-4aba-a0e7-cad55c49a6be",
+      "RecoverySiteIdentifier": "3a654b00-f6e1-4aba-a0e7-cad55c49a6be"
+    },
+    "Scripting": {
+      "PreRecovery": {
+        "Command": null,
+        "Parameters": null,
+        "TimeoutInSeconds": 300
+      },
+      "PostRecovery": {
+        "Command": null,
+        "Parameters": null,
+        "TimeoutInSeconds": 300
+      },
+      "PostBackup": null
+    },
+    "BootGroups": {
+      "BootGroups": [
+        {
+          "BootGroupIdentifier": "00000000-0000-0000-0000-000000000000",
+          "Name": "Default",
+          "BootDelayInSeconds": 0
+        }
+      ]
+    },
+    "Journal": {
+      "Limitation": {
+        "HardLimitInMB": 0,
+        "HardLimitInPercent": 75,
+        "WarningThresholdInMB": 0,
+        "WarningThresholdInPercent": 50
+      },
+      "DatastoreIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.datastore-14",
+      "DatastoreClusterIdentifier": null
+    },
+    "Scratch": {
+      "Limitation": {
+        "HardLimitInMB": 0,
+        "HardLimitInPercent": 75,
+        "WarningThresholdInMB": 0,
+        "WarningThresholdInPercent": 50
+      },
+      "DatastoreIdentifier": null,
+      "DatastoreClusterIdentifier": null
+    },
+    "LongTermRetention": null,
+    "Recovery": {
+      "DefaultHostIdentifier": null,
+      "DefaultHostClusterIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.domain-c8",
+      "DefaultDatastoreIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.datastore-14",
+      "DefaultDatastoreClusterIdentifier": null,
+      "DefaultFolderIdentifier": null,
+      "ResourcePoolIdentifier": null,
+      "VCD": null,
+      "PublicCloud": null
+    },
+    "Networks": {
+      "Failover": {
+        "VCD": null,
+        "Hypervisor": {
+          "DefaultNetworkIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.network-15"
+        },
+        "PublicCloud": null
+      },
+      "FailoverTest": {
+        "VCD": null,
+        "Hypervisor": {
+          "DefaultNetworkIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.network-1042"
+        },
+        "PublicCloud": null
+      }
+    },
+    "Vms": [
+      {
+        "VmIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.vm-1045",
+        "Recovery": {
+          "HostIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.host-1025",
+          "HostClusterIdentifier": null,
+          "DatastoreIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.datastore-14",
+          "DatastoreClusterIdentifier": null,
+          "FolderIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.group-v1088",
+          "ResourcePoolIdentifier": null,
+          "VCD": null,
+          "PublicCloud": null
+        },
+        "BootGroupIdentifier": "00000000-0000-0000-0000-000000000000",
+        "Journal": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.datastore-14",
+          "DatastoreClusterIdentifier": null
+        },
+        "Scratch": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.datastore-14",
+          "DatastoreClusterIdentifier": null
+        },
+        "Volumes": [
+          {
+            "VolumeIdentifier": "scsi:0:0",
+            "VCD": null,
+            "Preseed": {
+              "DatastoreIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.datastore-14",
+              "Path": "Z-VRA-192.168.50.52/af916f63c8c54/vm1045/ad1.vmdk"
+            },
+            "RDM": null,
+            "Datastore": null,
+            "IsSwap": null,
+            "VolumeSyncSettings": "ContinuousSync"
+          }
+        ],
+        "Nics": [
+          {
+            "NicIdentifier": "Network adapter 1",
+            "FailoverTest": {
+              "Hypervisor": {
+                "NetworkIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.network-1042",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            },
+            "Failover": {
+              "Hypervisor": {
+                "NetworkIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.network-15",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            }
+          }
+        ]
+      }
+    ],
+    "Protected": {
+      "VCD": null
+    }
+  },
+  {
+    "SourceSiteName": "JP-Lab",
+    "TargetSiteName": "CMH-ZVMa",
+    "VpgIdentifier": null,
+    "VpgSettingsIdentifier": null,
+    "Basic": {
+      "Name": "Windows",
+      "VpgType": "Remote",
+      "RpoInSeconds": 300,
+      "TestIntervalInMinutes": 0,
+      "JournalHistoryInHours": 96,
+      "Priority": "Medium",
+      "UseWanCompression": true,
+      "ServiceProfileIdentifier": "11111111-1111-1111-1111-111111111111",
+      "ZorgIdentifier": null,
+      "ProtectedSiteIdentifier": "3a654b00-f6e1-4aba-a0e7-cad55c49a6be",
+      "RecoverySiteIdentifier": "690771de-772d-46b4-8175-48e9160291c6"
+    },
+    "Scripting": {
+      "PreRecovery": {
+        "Command": null,
+        "Parameters": null,
+        "TimeoutInSeconds": 300
+      },
+      "PostRecovery": {
+        "Command": null,
+        "Parameters": null,
+        "TimeoutInSeconds": 300
+      },
+      "PostBackup": null
+    },
+    "BootGroups": {
+      "BootGroups": [
+        {
+          "BootGroupIdentifier": "00000000-0000-0000-0000-000000000000",
+          "Name": "Default",
+          "BootDelayInSeconds": 0
+        }
+      ]
+    },
+    "Journal": {
+      "Limitation": {
+        "HardLimitInMB": 0,
+        "HardLimitInPercent": 75,
+        "WarningThresholdInMB": 0,
+        "WarningThresholdInPercent": 50
+      },
+      "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+      "DatastoreClusterIdentifier": null
+    },
+    "Scratch": {
+      "Limitation": {
+        "HardLimitInMB": 0,
+        "HardLimitInPercent": 75,
+        "WarningThresholdInMB": 0,
+        "WarningThresholdInPercent": 50
+      },
+      "DatastoreIdentifier": null,
+      "DatastoreClusterIdentifier": null
+    },
+    "LongTermRetention": null,
+    "Recovery": {
+      "DefaultHostIdentifier": null,
+      "DefaultHostClusterIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.domain-c8",
+      "DefaultDatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+      "DefaultDatastoreClusterIdentifier": null,
+      "DefaultFolderIdentifier": null,
+      "ResourcePoolIdentifier": null,
+      "VCD": null,
+      "PublicCloud": null
+    },
+    "Networks": {
+      "Failover": {
+        "VCD": null,
+        "Hypervisor": {
+          "DefaultNetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24"
+        },
+        "PublicCloud": null
+      },
+      "FailoverTest": {
+        "VCD": null,
+        "Hypervisor": {
+          "DefaultNetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24"
+        },
+        "PublicCloud": null
+      }
+    },
+    "Vms": [
+      {
+        "VmIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.vm-1011",
+        "Recovery": {
+          "HostIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.host-13",
+          "HostClusterIdentifier": null,
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null,
+          "FolderIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.group-v75",
+          "ResourcePoolIdentifier": null,
+          "VCD": null,
+          "PublicCloud": null
+        },
+        "BootGroupIdentifier": "00000000-0000-0000-0000-000000000000",
+        "Journal": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null
+        },
+        "Scratch": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null
+        },
+        "Volumes": [
+          {
+            "VolumeIdentifier": "scsi:0:0",
+            "VCD": null,
+            "Preseed": {
+              "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-19",
+              "Path": "Z-VRA-192.168.50.21/340d740e7c4b4/vm1011/VM_Win_01_3.vmdk"
+            },
+            "RDM": null,
+            "Datastore": null,
+            "IsSwap": null,
+            "VolumeSyncSettings": "ContinuousSync"
+          },
+          {
+            "VolumeIdentifier": "scsi:0:1",
+            "VCD": null,
+            "Preseed": {
+              "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-19",
+              "Path": "Z-VRA-192.168.50.21/340d740e7c4b4/vm1011/VM_Win_01_5.vmdk"
+            },
+            "RDM": null,
+            "Datastore": null,
+            "IsSwap": null,
+            "VolumeSyncSettings": "ContinuousSync"
+          }
+        ],
+        "Nics": [
+          {
+            "NicIdentifier": "Network adapter 1",
+            "FailoverTest": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            },
+            "Failover": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            }
+          },
+          {
+            "NicIdentifier": "Network adapter 2",
+            "FailoverTest": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            },
+            "Failover": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            }
+          }
+        ]
+      },
+      {
+        "VmIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.vm-1013",
+        "Recovery": {
+          "HostIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.host-16",
+          "HostClusterIdentifier": null,
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null,
+          "FolderIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.group-v75",
+          "ResourcePoolIdentifier": null,
+          "VCD": null,
+          "PublicCloud": null
+        },
+        "BootGroupIdentifier": "00000000-0000-0000-0000-000000000000",
+        "Journal": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null
+        },
+        "Scratch": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null
+        },
+        "Volumes": [
+          {
+            "VolumeIdentifier": "scsi:0:0",
+            "VCD": null,
+            "Preseed": {
+              "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-19",
+              "Path": "Z-VRA-192.168.50.22/340d740e7c4b4/vm1013/VM_Win_02_6.vmdk"
+            },
+            "RDM": null,
+            "Datastore": null,
+            "IsSwap": null,
+            "VolumeSyncSettings": "ContinuousSync"
+          },
+          {
+            "VolumeIdentifier": "scsi:0:1",
+            "VCD": null,
+            "Preseed": {
+              "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-19",
+              "Path": "Z-VRA-192.168.50.22/340d740e7c4b4/vm1013/VM_Win_02_8.vmdk"
+            },
+            "RDM": null,
+            "Datastore": null,
+            "IsSwap": null,
+            "VolumeSyncSettings": "ContinuousSync"
+          }
+        ],
+        "Nics": [
+          {
+            "NicIdentifier": "Network adapter 1",
+            "FailoverTest": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            },
+            "Failover": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            }
+          }
+        ]
+      }
+    ],
+    "Protected": {
+      "VCD": null
+    }
+  },
+  {
+    "SourceSiteName": "JP-Lab",
+    "TargetSiteName": "CMH-ZVMa",
+    "VpgIdentifier": null,
+    "VpgSettingsIdentifier": null,
+    "Basic": {
+      "Name": "Linux",
+      "VpgType": "Remote",
+      "RpoInSeconds": 300,
+      "TestIntervalInMinutes": 0,
+      "JournalHistoryInHours": 96,
+      "Priority": "Medium",
+      "UseWanCompression": true,
+      "ServiceProfileIdentifier": "11111111-1111-1111-1111-111111111111",
+      "ZorgIdentifier": null,
+      "ProtectedSiteIdentifier": "3a654b00-f6e1-4aba-a0e7-cad55c49a6be",
+      "RecoverySiteIdentifier": "690771de-772d-46b4-8175-48e9160291c6"
+    },
+    "Scripting": {
+      "PreRecovery": {
+        "Command": null,
+        "Parameters": null,
+        "TimeoutInSeconds": 300
+      },
+      "PostRecovery": {
+        "Command": null,
+        "Parameters": null,
+        "TimeoutInSeconds": 300
+      },
+      "PostBackup": null
+    },
+    "BootGroups": {
+      "BootGroups": [
+        {
+          "BootGroupIdentifier": "00000000-0000-0000-0000-000000000000",
+          "Name": "Default",
+          "BootDelayInSeconds": 0
+        }
+      ]
+    },
+    "Journal": {
+      "Limitation": {
+        "HardLimitInMB": 0,
+        "HardLimitInPercent": 75,
+        "WarningThresholdInMB": 0,
+        "WarningThresholdInPercent": 50
+      },
+      "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+      "DatastoreClusterIdentifier": null
+    },
+    "Scratch": {
+      "Limitation": {
+        "HardLimitInMB": 0,
+        "HardLimitInPercent": 75,
+        "WarningThresholdInMB": 0,
+        "WarningThresholdInPercent": 50
+      },
+      "DatastoreIdentifier": null,
+      "DatastoreClusterIdentifier": null
+    },
+    "LongTermRetention": null,
+    "Recovery": {
+      "DefaultHostIdentifier": null,
+      "DefaultHostClusterIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.domain-c8",
+      "DefaultDatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+      "DefaultDatastoreClusterIdentifier": null,
+      "DefaultFolderIdentifier": null,
+      "ResourcePoolIdentifier": null,
+      "VCD": null,
+      "PublicCloud": null
+    },
+    "Networks": {
+      "Failover": {
+        "VCD": null,
+        "Hypervisor": {
+          "DefaultNetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24"
+        },
+        "PublicCloud": null
+      },
+      "FailoverTest": {
+        "VCD": null,
+        "Hypervisor": {
+          "DefaultNetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24"
+        },
+        "PublicCloud": null
+      }
+    },
+    "Vms": [
+      {
+        "VmIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.vm-18",
+        "Recovery": {
+          "HostIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.host-16",
+          "HostClusterIdentifier": null,
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null,
+          "FolderIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.group-v75",
+          "ResourcePoolIdentifier": null,
+          "VCD": null,
+          "PublicCloud": null
+        },
+        "BootGroupIdentifier": "00000000-0000-0000-0000-000000000000",
+        "Journal": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null
+        },
+        "Scratch": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null
+        },
+        "Volumes": [
+          {
+            "VolumeIdentifier": "scsi:0:0",
+            "VCD": null,
+            "Preseed": {
+              "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-19",
+              "Path": "Z-VRA-192.168.50.22/340d740e7c4b4/vm18/cmh-linux-1.vmdk"
+            },
+            "RDM": null,
+            "Datastore": null,
+            "IsSwap": null,
+            "VolumeSyncSettings": "ContinuousSync"
+          },
+          {
+            "VolumeIdentifier": "scsi:0:1",
+            "VCD": null,
+            "Preseed": {
+              "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-19",
+              "Path": "Z-VRA-192.168.50.22/340d740e7c4b4/vm18/cmh-linux-1_1.vmdk"
+            },
+            "RDM": null,
+            "Datastore": null,
+            "IsSwap": null,
+            "VolumeSyncSettings": "ContinuousSync"
+          }
+        ],
+        "Nics": [
+          {
+            "NicIdentifier": "Network adapter 1",
+            "FailoverTest": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            },
+            "Failover": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            }
+          },
+          {
+            "NicIdentifier": "Network adapter 2",
+            "FailoverTest": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            },
+            "Failover": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            }
+          }
+        ]
+      },
+      {
+        "VmIdentifier": "5da9d183-f3f9-4ea9-bf46-eca5c06aec73.vm-1091",
+        "Recovery": {
+          "HostIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.host-13",
+          "HostClusterIdentifier": null,
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null,
+          "FolderIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.group-v75",
+          "ResourcePoolIdentifier": null,
+          "VCD": null,
+          "PublicCloud": null
+        },
+        "BootGroupIdentifier": "00000000-0000-0000-0000-000000000000",
+        "Journal": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null
+        },
+        "Scratch": {
+          "Limitation": {
+            "HardLimitInMB": 0,
+            "HardLimitInPercent": 75,
+            "WarningThresholdInMB": 0,
+            "WarningThresholdInPercent": 50
+          },
+          "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-151",
+          "DatastoreClusterIdentifier": null
+        },
+        "Volumes": [
+          {
+            "VolumeIdentifier": "scsi:0:0",
+            "VCD": null,
+            "Preseed": {
+              "DatastoreIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.datastore-19",
+              "Path": "Z-VRA-192.168.50.21/340d740e7c4b4/vm1091/cmh-linux-2.vmdk"
+            },
+            "RDM": null,
+            "Datastore": null,
+            "IsSwap": null,
+            "VolumeSyncSettings": "ContinuousSync"
+          }
+        ],
+        "Nics": [
+          {
+            "NicIdentifier": "Network adapter 1",
+            "FailoverTest": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            },
+            "Failover": {
+              "Hypervisor": {
+                "NetworkIdentifier": "33a1b5ba-8d4c-4c1b-8ca2-a5f63419d258.network-24",
+                "ShouldReplaceMacAddress": false,
+                "DnsSuffix": null,
+                "IpConfig": null,
+                "ShouldReplaceIpConfiguration": false
+              },
+              "VCD": null,
+              "PublicCloud": null
+            }
+          }
+        ]
+      }
+    ],
+    "Protected": {
+      "VCD": null
+    }
+  }
+]
